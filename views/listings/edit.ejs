@@ -30,7 +30,8 @@
                 <img src="<%= originalImageUrl %>" >
             </div>
 
-            <div class="mb-3">
+            <div class="row">
+                <div class="mb-3 col-md-8">
                 <label for="image" class="form-label">Upload New Image</label>
                 <input 
                     type="file"
@@ -38,7 +39,23 @@
                     placeholder="enter image URL/link" 
                     class="form-control"
                 >
+                </div>
+                <div class="mb-3 col-md-4">
+                    <label for="category" class="form-label">Select Category</label>
+                    <select name="listings[category]" class="form-select">
+                        <option value="Trending">Trending</option>
+                        <option value="Rooms">Rooms</option>
+                        <option value="Iconic Cities">Iconic Cities</option>
+                        <option value="Mountains">Mountains</option>
+                        <option value="Castles">Castles</option>
+                        <option value="Amazing Pools">Amazing Pools</option>
+                        <option value="Camping">Camping</option>
+                        <option value="Farms">Farms</option>
+                        <option value="Arctic">Arctic</option>
+                    </select>
+                </div>
             </div>
+            
 
             <div class="row">
                     <div class="mb-3 col-md-4">
